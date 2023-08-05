@@ -6,12 +6,25 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: "Sawarabi Gothic", sans-serif;
+}
 div,
 p,
 h1,
 h2 {
   margin: 0;
   padding: 0;
+}
+.wrapper {
+  width: 400px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+h1 {
+  font-weight: normal;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 .temp-range {
   font-size: 0.9rem;
@@ -22,12 +35,16 @@ h2 {
 ul {
   display: flex;
   flex-wrap: wrap;
+  gap: 3px;
 }
 li {
   list-style: none;
-  border: 1px #aaa solid;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
   margin: 2px;
-  padding: 2px 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
   cursor: pointer;
 }
 .card {
@@ -38,7 +55,8 @@ li {
   background-blend-mode: lighten;
   background-size: cover;
   color: black;
-  margin: 50px auto 0;
+  border: 2px solid black;
+  margin: 30px auto 0;
   border-radius: 20px;
   text-align: center;
   padding: 2px;

@@ -12,8 +12,10 @@
     />
     <title>Weather App</title>
   </head>
+
   <body>
-      <h1>Weather App</h1>
+    <div class="wrapper">
+      <h1>Weather</h1>
       <ul class="select-region">
         <li id="sapporo">札幌</li>
         <li id="sendai">仙台</li>
@@ -31,7 +33,7 @@
         <div class="details">
             <p class="city">東京都</p>
             <p class="temp">--°c</p>
-            <img src="#" id="weatherIcon">
+            <img src="#" id="weatherIcon" alt="天気アイコン">
             <p class="temp-range">
             <span class="material-symbols-outlined">
                 device_thermostat
@@ -53,15 +55,8 @@
                 <p class="wind">--km/h</p>
             <div>
 
-      </div><!-- details -->
-    </div><!-- card -->
+        </div>        <!-- details -->
+        </div>  <!-- wrapper -->
     <script src="main.js"></script>
   </body>
 </html>
-<!-- https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=403dbc5ea76be6c820e7d913daae82b1&units=metric -->
-<!-- https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} -->
-<!-- key -->
-<!-- 403dbc5ea76be6c820e7d913daae82b1 -->
-<!-- openweathe/5日先まで3時間ごとの転機を取得可能
-1分間に60リクエストかつ1ヶ月に100万リクエストまで
-データhttps://zenn.dev/daifukuninja/articles/5e696cd0a75ba8-->
